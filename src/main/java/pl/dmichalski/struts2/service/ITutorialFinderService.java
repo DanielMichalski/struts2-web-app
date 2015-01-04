@@ -5,6 +5,6 @@ package pl.dmichalski.struts2.service;
  */
 public interface ITutorialFinderService {
 
-    public String getBestTutorialSite();
+    public String getBestTutorialSite(String language);
 
 }

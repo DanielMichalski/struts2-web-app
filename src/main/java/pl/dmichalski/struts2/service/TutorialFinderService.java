@@ -6,8 +6,12 @@ package pl.dmichalski.struts2.service;
 public class TutorialFinderService implements ITutorialFinderService {
 
     @Override
-    public String getBestTutorialSite() {
-        return "Java Brains";
+    public String getBestTutorialSite(String language) {
+        if ("java".equals(language)) {
+            return "Java Brains";
+        } else {
+            return "Language not supported yet!";
+        }
     }
 
 }

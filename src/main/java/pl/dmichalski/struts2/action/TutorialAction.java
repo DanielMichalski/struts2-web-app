@@ -8,15 +8,36 @@ import pl.dmichalski.struts2.service.TutorialFinderService;
  */
 public class TutorialAction {
 
-    private ITutorialFinderService tutorialFinderService;
+    private String bestTutorialSite;
 
-    public String execute() {
-        tutorialFinderService = new TutorialFinderService();
-        String bestTutorialSite = tutorialFinderService.getBestTutorialSite();
+    private String language;
 
+    public static final String SUCCESS = "success";
 
-
-        return "success";
+    public String getTutorial() {
+        ITutorialFinderService tutorialFinderService = new TutorialFinderService();
+        setBestTutorialSite(tutorialFinderService.getBestTutorialSite(language));
+        return SUCCESS;
     }
 
+    public String addTutorial() {
+        setBestTutorialSite("Add tutorial called");
+        return SUCCESS;
+    }
+
+    public String getBestTutorialSite() {
+        return bestTutorialSite;
+    }
+
+    public void setBestTutorialSite(String bestTutorialSite) {
+        this.bestTutorialSite = bestTutorialSite;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
 }
