@@ -1,4 +1,6 @@
-package pl.dmichalski.struts2.service;
+package pl.dmichalski.struts2.service.impl;
+
+import pl.dmichalski.struts2.service.ITutorialFinderService;
 
 /**
  * Author: Daniel

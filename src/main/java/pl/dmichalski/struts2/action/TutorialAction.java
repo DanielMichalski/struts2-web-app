@@ -1,7 +1,7 @@
 package pl.dmichalski.struts2.action;
 
 import pl.dmichalski.struts2.service.ITutorialFinderService;
-import pl.dmichalski.struts2.service.TutorialFinderService;
+import pl.dmichalski.struts2.service.impl.TutorialFinderService;
 
 /**
  * Author: Daniel

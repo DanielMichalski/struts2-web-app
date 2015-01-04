@@ -6,7 +6,7 @@
 </head>
 <body>
 <s:form action="tutorials/getTutorial">
-    <s:textfield label="Enter the language" key="language" />
+    <s:textfield label="Enter programming language" key="language" />
     <s:submit />
 </s:form>
 </body>

@@ -6,7 +6,7 @@
 </head>
 <body>
     <h3>
-        <s:property value="bestTutorialSite"/>
+        Best tutorial: <s:property value="bestTutorialSite"/>
     </h3>
 </body>
 </html>

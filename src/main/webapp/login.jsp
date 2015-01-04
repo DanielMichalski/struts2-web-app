@@ -5,6 +5,7 @@
     <title>Login</title>
 </head>
 <body>
+<h4>For testing: test test</h4>
 <s:form action="login">
     <s:textfield label="Login ID" key="userId"/>
     <s:password label="Password" key="password"/>
